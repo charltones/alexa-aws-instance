@@ -38,7 +38,9 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 	```bash
 	$ ask deploy
 	```
-	
+
+2. Amend the role used for the Lambda function in the AWS management console to allow it access to EC2. This will let it call describe instances, stop instances and start instances.
+
 ### Usage
 Once the skill is deployed, you can test it from the command line or via the Alexa skills page [here](https://developer.amazon.com/edw/home.html#/skills). After testing, you can use it with your own Alexa devices, just say:
 
