@@ -42,21 +42,21 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 2. Amend the role used for the Lambda function in the AWS management console to allow it access to EC2. This will let it call describe instances, stop instances and start instances. Create the following as a new policy and attach the policy to the role that Alexa Skills Kit creates for you:
 
 	```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "sid0",
-            "Effect": "Allow",
-            "Action": [
-                "ec2:DescribeInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+	{
+   		"Version": "2012-10-17",
+    	"Statement": [
+    		{
+				"Sid": "sid0",
+				"Effect": "Allow",
+				"Action": [
+             		"ec2:DescribeInstances",
+                	"ec2:StartInstances",
+                	"ec2:StopInstances"
+            	],
+            	"Resource": "*"
+        	}
+    	]
+	}
 	```
 
 ### Usage
