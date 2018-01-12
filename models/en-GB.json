@@ -1,0 +1,101 @@
+{
+    "interactionModel":{
+        "languageModel":{
+            "invocationName":"my instance",
+            "types":[],
+            "intents":[
+                {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+                },
+                {
+                    "name":"IsItOnIntent",
+                    "slots":[
+                        {
+                            "name":"name",
+                            "type":"AMAZON.GB_FIRST_NAME"
+                        } 
+                    ],
+                    "samples":[
+                        "is {name} on",
+                        "is {name} running",
+                        "is {name} switched on"
+                    ]
+                },
+                {
+                    "name":"UptimeIntent",
+                    "slots":[
+                        {
+                            "name":"name",
+                            "type":"AMAZON.GB_FIRST_NAME"
+                        } 
+                    ],
+                    "samples":[
+                        "how long has {name} been on",
+                        "how long has {name} been on for",
+                        "how long has {name} been running",
+                        "how long has {name} been switched on",
+                        "how long has {name} been switched on for"
+                    ]
+                },
+                 {
+                    "name":"IPIntent",
+                    "slots":[
+                        {
+                            "name":"name",
+                            "type":"AMAZON.GB_FIRST_NAME"
+                        } 
+                    ],
+                    "samples":[
+                        "what is the address for {name}",
+                        "how do I connect to {name}",
+                        "where is {name}"
+                    ]
+                },
+                {
+                    "name":"StartIntent",
+                    "slots":[
+                        {
+                            "name":"name",
+                            "type":"AMAZON.GB_FIRST_NAME"
+                        } 
+                    ],
+                    "samples":[
+                        "start {name}",
+                        "switch {name} on",
+                        "switch on {name}",
+                        "turn {name} on",
+                        "turn on {name}"
+                    ]
+                },
+                {
+                    "name":"StopIntent",
+                    "slots":[
+                        {
+                            "name":"name",
+                            "type":"AMAZON.GB_FIRST_NAME"
+                        } 
+                    ],
+                    "samples":[
+                        "stop {name}",
+                        "switch {name} off",
+                        "switch off {name}",
+                        "shut {name} down",
+                        "shut down {name}",
+                        "turn {name} off",
+                        "turn off {name}"
+                    ]
+                }
+                
+            ]
+        }
+    }
+}
