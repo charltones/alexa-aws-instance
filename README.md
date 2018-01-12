@@ -50,12 +50,12 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 				"Effect": "Allow",
 				"Action": [
              		"ec2:DescribeInstances",
-                	"ec2:StartInstances",
-                	"ec2:StopInstances"
-            	],
-            	"Resource": "*"
-        	}
-    	]
+					"ec2:StartInstances",
+					"ec2:StopInstances"
+				],
+				"Resource": "*"
+			}
+		]
 	}
 	```
 
